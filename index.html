@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+      ttq.load('D6VTJ1JC77U4GR00FL3G');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '905121178968619');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=905121178968619&ev=PageView&noscript=1"
+    /></noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Milka Dankeprogramm - Exklusives Milka Schoko-Paket zu gewinnen!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { 
+            --milka-purple: #422D91; /* 核心修改：Milka 妙卡官方紫罗兰色 */
+            --milka-light-purple: #755BB4; /* 核心修改：Milka 浅紫色 */
+            --accent-red: #ff4e50; /* 调成和最终 Offer 页按钮一致的红色 */
+            --bg-gray: #f8fafc;
+        }
+
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            background-color: var(--bg-gray); 
+            margin: 0; padding: 0; color: #1e293b; 
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .navbar { 
+            background: var(--milka-purple); /* 核心修改：Navbar背景色改为妙卡紫 */
+            height: 90px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border-bottom: 3px solid var(--milka-light-purple); 
+            position: sticky; top: 0; z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo-img { height: 75px; width: auto; display: block; }
+
+        .wrapper { 
+            max-width: 500px; 
+            margin: 0 auto; 
+            background: white; 
+            min-height: 100vh; 
+            box-shadow: 0 0 40px rgba(0,0,0,0.05); 
+            display: flex; flex-direction: column;
+        }
+
+        .timer-container { padding: 20px 20px 10px; }
+        .timer-box { 
+            background: #ffffff; 
+            border: 1px solid #e2e8f0; 
+            padding: 15px; 
+            border-radius: 16px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .live-dot {
+            width: 8px; height: 8px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            position: relative;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .timer-text { color: #64748b; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        #countdown { 
+            color: #0f172a; 
+            font-size: 20px; 
+            font-weight: 700; 
+            font-family: 'Courier New', Courier, monospace;
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        .hero-section { padding: 30px 15px; background: #fff; text-align: center; }
+        .floating-voucher { 
+            width: 100%; max-width: 420px; 
+            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.12));
+            animation: float 3.5s ease-in-out infinite;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+        .steps-container { padding: 25px; background: #fff; }
+        .step-item { display: flex; align-items: flex-start; margin-bottom: 25px; }
+        .step-num { 
+            background: var(--milka-purple); color: white; width: 32px; height: 32px; 
+            border-radius: 10px; display: flex; align-items: center; justify-content: center; 
+            font-weight: 800; margin-right: 18px; flex-shrink: 0; font-size: 16px;
+        }
+        .step-content b { display: block; font-family: 'Montserrat', sans-serif; font-size: 17px; color: #0f172a; margin-bottom: 6px; }
+        .step-content p { margin: 0; font-size: 14.5px; color: #64748b; line-height: 1.6; }
+
+        .cta-section { padding: 10px 25px 40px; }
+        .main-btn { 
+            background: var(--accent-red); /* 对齐最终页颜色 */
+            color: white; text-decoration: none; 
+            display: block; padding: 20px; border-radius: 16px; 
+            font-family: 'Montserrat', sans-serif; font-size: 20px; 
+            font-weight: 800; letter-spacing: 0.05em;
+            box-shadow: 0 10px 20px rgba(255, 78, 80, 0.3); 
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .main-btn:active { transform: scale(0.98); box-shadow: 0 5px 10px rgba(255, 78, 80, 0.2); }
+
+        .comment-header { padding: 20px 25px 0; background: #fff; border-top: 10px solid #f1f5f9; }
+        .comment-header h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; color: #0f172a; margin: 0; }
+        .comment-list-box { background: #fff; padding: 10px 20px 20px; overflow: hidden; height: 380px; position: relative; }
+        .scroll-wrapper { animation: scrollUp 45s linear infinite; }
+        .c-item { display: flex; padding: 18px 0; border-bottom: 1px solid #f8fafc; }
+        .u-avatar { width: 48px; height: 48px; border-radius: 14px; margin-right: 15px; background-size: cover; flex-shrink: 0; border: 1px solid #f1f5f9; }
+        .u-name { font-weight: 700; color: #0f172a; font-size: 14px; margin-bottom: 4px; }
+        .u-text { font-size: 14px; line-height: 1.5; color: #475569; }
+
+        @keyframes scrollUp { 0% { transform: translateY(0); } 100% { transform: translateY(-1500px); } }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="navbar">
+        <img src="top-logo.png" class="logo-img" alt="Milka Logo">
+    </div>
+
+    <div class="timer-container">
+       <div class="timer-box">
+            <div class="live-dot"></div>
+            <span class="timer-text">RESERVIERT: Milka Schoko-Paket</span>
+            <span id="countdown">10:00</span>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <img src="voucher.png" class="floating-voucher" alt="Milka Paket zu gewinnen">
+    </div>
+
+    <div class="steps-container">
+        <div class="step-item">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <b>Aktion aktivieren</b>
+                <p>Klicke auf den Button unten, um deine Gewinnteilnahme am Milka Dankeprogramm zu starten.</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <b>Gewinndaten angeben</b>
+                <p>Gib deine E-Mail-Adresse und Postanschrift für die Zustellung des Schoko-Pakets an.</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <b>100% Gratis</b>
+                <p>Bestätige, dass du an dem Gewinnspiel für das exklusive Milka Paket teilnimmst.</p>
+            </div>
+        </div>
+        <div class="step-item">
+            <div class="step-num">4</div>
+            <div class="step-content">
+                <b>Sofortiger Versand</b>
+                <p>Nach erfolgreicher Prüfung wird dein Milka Schoko-Paket direkt zu dir geschickt.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <p style="font-size: 14px; color: #1e293b; text-align: center; margin-bottom: 12px; font-weight: 600; line-height: 1.4;">
+            ⚠️ Fast geschafft! <br>
+            Gib im nächsten Schritt deine Versanddaten an:
+        </p>
+
+        <a href="[[YOUR_GDMTRCK_LINK_FOR_MILKA]]" class="main-btn" onclick="trackClick()">JETZT TEILNEHMEN</a>
+        
+        <p style="font-size: 12px; color: #94a3b8; margin-top: 18px; text-align: center;">Aktion gültig für: <span id="cur-date"></span><br>
+        <span style="font-size: 10px;">*Markenzeichen gehören den jeweiligen Eigentümern.</span></p>
+    </div>
+
+    <div class="comment-header">
+        <h3>Live-Aktivierungen</h3>
+    </div>
+    <div class="comment-list-box">
+        <div class="scroll-wrapper" id="comment-container"></div>
+    </div>
+
+    <footer style="font-size:11px; color:#94a3b8; text-align:center; padding:40px 20px; line-height:1.6; background: #f8fafc;">
+        © 2026 Alle Rechte vorbehalten. Diese Website ist nicht mit Milka/Mondelēz International verbunden. Markenzeichen gehören den jeweiligen Eigentümern.
+    </footer>
+</div>
+
+<script>
+    // 追踪函数：同时记录 FB 和 TikTok 的“加购”事件
+    function trackClick() {
+        if (typeof fbq !== 'undefined') {
+            fbq('track', 'AddToCart'); // 告诉FB这是高意向动作
+        }
+        if (typeof ttq !== 'undefined') {
+            ttq.track('AddToCart'); // 告诉TikTok
+        }
+    }
+
+    function startTimer(duration, display) {
+        let timer;
+        let savedTime = localStorage.getItem('milka_timer');
+        if (!savedTime || parseInt(savedTime) <= 0) {
+            timer = duration;
+        } else {
+            timer = parseInt(savedTime);
+        }
+        setInterval(() => {
+            let minutes = parseInt(timer / 60, 10);
+            let seconds = parseInt(timer % 60, 10);
+            display.textContent = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+            if (--timer < 0) timer = duration;
+            localStorage.setItem('milka_timer', timer);
+        }, 1000);
+    }
+
+    const names = ["Karin W.", "Thomas M.", "Sabine S.", "Lukas B.", "Monika H.", "Andreas F.", "Petra G.", "Stefan K.", "Janine T.", "Michael R.", "Anja L.", "Bernd D.", "Helga P.", " Uwe J.", "Sandra C."];
+    const texts = ["Endlich mal ein echter Gewinn! Hat super geklappt.", "Die Brownies kamen genau richtig für den Filmabend.", "Milka Schokolade ist top, danke für die Aktion!", "Einfach auszufüllen, Gewinnaussicht in 5 Min da.", "Ich liebe Milka. Seriöse Aktion.", "Schon meinen Freunden weiterempfohlen!", "Hat alles reibungslos funktioniert.", "Paket kam per DHL und war sehr gut verpackt.", "Perfekt für Schoko-Fans, danke Mondelēz!", "Ging viel schneller als ich dachte.", "Tolle Überraschung am Morgen!", "Alles super, 5 Sterne!", "Mein Schokovorrat ist diesmal gratis.", "Gerade per E-Mail erhalten, danke!", "Hatte erst Zweifel, aber es ist 100% echt."];
+    
+    let html = "";
+    for(let i=0; i<15; i++) {
+        html += `<div class="c-item"><div class="u-avatar" style="background-image:url('https://i.pravatar.cc/100?img=${i+20}')"></div><div><div class="u-name">${names[i]}</div><div class="u-text">${texts[i]}</div></div></div>`;
+    }
+    document.getElementById('comment-container').innerHTML = html + html; 
+
+    window.onload = () => {
+        startTimer(600, document.querySelector('#countdown'));
+        document.getElementById('cur-date').innerText = new Date().toLocaleDateString('de-DE');
+    };
+</script>
+
+</body>
+</html>
